@@ -8,9 +8,11 @@ test_tweets = [
 
   test_tweets.each do |sentence|
     banned_phrases = ["sucks", "bad", "hate", "foolish", "danger to society"]
+    censored_tweets = []
     banned_phrases.each do |ban|
       if sentence.include?(ban)
-        puts sentence.sub(ban, "CENSORED")
+        censored_tweets.append(sentence.sub(ban, "CENSORED"))
       end
     end
+    puts censored_tweets
   end
