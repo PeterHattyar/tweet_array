@@ -5,15 +5,19 @@ test_tweets = [
   "President Presidentname is a danger to society. I hate that he's so bad - it sucks."
   ]
 
-  censored_tweets = []
+banned_phrases = ["sucks", "bad", "hate", "foolish", "danger to society"]
 
+censored_tweets = []
+
+  
   test_tweets.each do |sentence|
-    banned_phrases = ["sucks", "bad", "hate", "foolish", "danger to society"]
+    censored_sentence = sentence
     banned_phrases.each do |ban|
       if sentence.include?(ban)
-        censored_tweets.append(sentence.sub(ban, "CENSORED"))
+        censored_sentence = censored_sentence.sub(ban, "CENSORED")
       end
     end
+    censored_tweets.append(censored_sentence)
   end
 
   puts censored_tweets
