@@ -16,3 +16,12 @@ test_tweets = [
     end
     puts censored_tweets
   end
+
+# This president CENSORED!
+# I CENSORED this Blank House!
+# I can't believe we're living under such CENSORED leadership. We were so foolish
+# I can't believe we're living under such bad leadership. We were so CENSORED
+# President Presidentname is a danger to society. I hate that he's so bad - it CENSORED.
+# President Presidentname is a danger to society. I hate that he's so CENSORED - it sucks.
+# President Presidentname is a danger to society. I CENSORED that he's so bad - it sucks.
+# President Presidentname is a CENSORED. I hate that he's so bad - it sucks.
