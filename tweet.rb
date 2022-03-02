@@ -6,14 +6,11 @@ test_tweets = [
   ]
 
 
-test_tweets.each do |sentence|
-  banned_phrases = ["sucks", "bad", "hate", "foolish", "danger to society"]
-  banned_phrases.each do |ban|
-    if sentence.include?(ban)
-      puts sentence
-      # sentence.sub(ban, "CENSORED")
+  test_tweets.each do |sentence|
+    banned_phrases = ["sucks", "bad", "hate", "foolish", "danger to society"]
+    banned_phrases.each do |ban|
+      if sentence.include?(ban)
+        puts sentence.sub(ban, "CENSORED")
+      end
     end
   end
-end
-
-# puts test_tweets
